@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   get '/search', to: 'searches#search'
   post '/search', to: 'searches#foursquare'
   get '/auth', to: 'sessions#create'
-  # post '/auth'
+  get '/friends', to: 'searches#friends'
 end
